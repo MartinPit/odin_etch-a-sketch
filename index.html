@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Etch-a-sketch</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
@@ -12,14 +12,22 @@
   </header>
 
   <div class="content">
+    <div class="settings">
+      <label for="picker"></label>
+      <input id="picker" type="color" value="#000000">
+      <button id="clear" class="button">Clear Mode</button>
+      <button id="random" class="button">Rainbow Mode</button>
+      <button id="erase" class="button">Erase</button>
+      <button value="16" class="size button">16x16</button>
+      <button value="32" class="size button">32x32</button>
+      <button value="64" class="size button">64x64</button>
+    </div>
     <div class="container">
-      <div class="grid">
-      </div>
     </div>
   </div>
 
   <footer>
-    <p>Created by <a class="github" href="https://github.com/MartinPit">
+    <p>Created by MartinPit <a class="github" href="https://github.com/MartinPit">
         <i class="fab"></i>
       </a>
     </p>
